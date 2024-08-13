@@ -1,0 +1,91 @@
+<section id="About" class="containerAbout gap-5 px-5 py-10 sm:px-10">
+	<h2 class="text-3xl font-bold text-pearl-lusta-700 [grid-area:title] sm:text-4xl">
+		Sobre Nosotros
+	</h2>
+
+	<picture class="containerImages gap-2 rounded-lg [grid-area:images]">
+		<img
+			src="/images/abaut-3.webp"
+			loading="lazy"
+			class="aspect-square h-full rounded-xl object-cover transition duration-300 hover:scale-105"
+			alt="Un paquete blanco con una etiqueta verde, derramando granos de café marrones sobre una superficie."
+		/>
+
+		<img
+			loading="lazy"
+			src="/images/abaut-2.webp"
+			class="aspect-square h-full rounded-xl object-cover transition duration-300 hover:scale-105"
+			alt="Una taza de café humeante en una taza blanca reposa sobre un platillo rodeado de granos de café."
+		/>
+
+		<img
+			loading="lazy"
+			src="/images/abaut-1.webp"
+			alt="Manos cosechando semillas de café maduras en cestas entre hojas verdes."
+			class="col-span-2 aspect-video h-full w-full rounded-xl object-cover object-bottom transition duration-300 hover:scale-105"
+		/>
+	</picture>
+
+	<div class="space-y-2 font-medium [grid-area:about]">
+		<p>
+			Nace del recuerdo de las montañas de Nicaragua con el despertar de cada mañana con el aroma a
+			café y la despedida dulce de "Santitos" de los hijos a sus papitos.
+		</p>
+
+		<p>
+			<strong>Café Papá Julio</strong> es un honor a mi papá y todos los caficultores que día a día se
+			levantan para trabajar la tierra, recolectar café y motivarnos con su energía.
+		</p>
+
+		<a
+			href="https://api.whatsapp.com/send?phone=50587809838"
+			class="inline-block rounded-br-xl rounded-tl-xl bg-pearl-lusta-700 px-3 py-2 text-center font-semibold text-white transition duration-300 hover:bg-pearl-lusta-600 sm:px-4 sm:py-3"
+		>
+			Compra Ahora
+		</a>
+	</div>
+</section>
+
+<style>
+	.containerAbout {
+		display: grid;
+		grid-template-areas:
+			'title'
+			'images'
+			'about';
+	}
+
+	.containerImages {
+		display: grid;
+		grid-template-columns: repeat(2, 140px);
+		grid-template-rows: repeat(2, 140px);
+		justify-content: center;
+		align-content: center;
+	}
+
+	@media (min-width: 640px) {
+		.containerAbout {
+			display: grid;
+			grid-template-areas:
+				'images title'
+				'images about';
+			grid-template-columns: 1fr 1.5fr;
+		}
+
+		.containerImages {
+			display: grid;
+			grid-template-columns: repeat(2, 120px);
+			grid-template-rows: repeat(2, 120px);
+			justify-content: center;
+		}
+	}
+
+	@media (min-width: 1024px) {
+		.containerImages {
+			display: grid;
+			grid-template-columns: repeat(2, 160px);
+			grid-template-rows: repeat(2, 160px);
+			justify-content: center;
+		}
+	}
+</style>

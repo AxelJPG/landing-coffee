@@ -1,0 +1,35 @@
+---
+import IconFacebook from '@/assets/icons/facebook.astro'
+import IconInstagram from '@/assets/icons/instagram.astro'
+import IconWhatsapp from '@/assets/icons/whatsapp.astro'
+---
+
+<footer
+	class="flex flex-col items-center justify-center gap-6 bg-pearl-lusta-700 py-4 text-pearl-lusta-50 sm:flex-row sm:px-10"
+>
+	<nav
+		class="flex w-full flex-row items-center justify-center gap-4 text-center font-semibold sm:justify-start sm:gap-6 lg:gap-10"
+	>
+		<a href="#Home" class="font-bold hover:underline hover:underline-offset-8">Home</a>
+		<a href="#About" class="font-bold hover:underline hover:underline-offset-8">Nosotros</a>
+		<a href="#Products" class="font-bold hover:underline hover:underline-offset-8">Productos</a>
+		<a href="#Reviews" class="font-bold hover:underline hover:underline-offset-8">Opiniones</a>
+	</nav>
+
+	<div class="flex flex-row gap-4">
+		<a
+			href="https://www.facebook.com/share/5dKmh5kHWis3CZgd/?mibextid=qi2Omg"
+			aria-label="icono de facebook"
+		>
+			<IconFacebook class="transition duration-300 hover:scale-110" />
+		</a>
+
+		<a href="https://www.instagram.com/cafepapajulio/" aria-label="icono de instagram">
+			<IconInstagram class="transition duration-300 hover:scale-110" />
+		</a>
+
+		<a href="https://api.whatsapp.com/send?phone=50587809838" aria-label="icono de whatsapp">
+			<IconWhatsapp class="transition duration-300 hover:scale-110" />
+		</a>
+	</div>
+</footer>

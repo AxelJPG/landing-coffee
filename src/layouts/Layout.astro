@@ -1,0 +1,33 @@
+---
+interface Props {
+	title: string
+	description: string
+}
+
+import Footer from '@/sections/Footer.astro'
+import Header from '@/sections/Header.astro'
+import '@fontsource-variable/nunito'
+
+const { title, description } = Astro.props
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	</head>
+	<body class="mx-auto bg-pearl-lusta-50 text-pearl-lusta-950 lg:max-w-screen-lg">
+		<Header />
+		<slot />
+		<Footer />
+	</body>
+</html>
+<style is:global>
+	html {
+		font-family: 'Nunito Variable', system-ui, sans-serif;
+	}
+</style>

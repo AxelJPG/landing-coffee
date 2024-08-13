@@ -1,0 +1,67 @@
+---
+const linkCoffeCatura =
+	'https://api.whatsapp.com/send?phone=50587809838&text=Hola%2C%20estoy%20interesado%C2%A0%20en%20su%20caf%C3%A9%20molido%20Caturra%20podr%C3%ADa%20brindarme%20m%C3%A1s%20informaci%C3%B3n.'
+
+const linkCoffeArabica =
+	'https://api.whatsapp.com/send?phone=50587809838&text=Hola%2C%20estoy%20interesado%C2%A0en%20su%20caf%C3%A9%20de%20grano%20Arabica%20podr%C3%ADa%20brindarme%20m%C3%A1s%20informaci%C3%B3n.'
+---
+
+<section id="Products" class="space-y-5 px-5 py-10 sm:px-10">
+	<h2 class="text-3xl font-bold text-pearl-lusta-700 sm:text-4xl">Productos</h2>
+
+	<div
+		class="grid grid-cols-1 place-content-center place-items-center gap-8 sm:grid-cols-2 lg:grid-cols-4"
+	>
+		<article class="w-60 shadow-lg transition duration-700 hover:scale-105 lg:w-56">
+			<picture>
+				<img
+					loading="lazy"
+					src="/images/cafe-cuturra.webp"
+					class="aspect-square h-56 w-full rounded-t-xl p-5"
+					alt="Bolsa plateada de café Papá Julio con una etiqueta verde que muestra a un hombre cosechando granos de café."
+				/>
+			</picture>
+			<div class="border-pearl-lusta-400 bg-pearl-lusta-100 p-4">
+				<h3 class="text-lg font-bold">Cafe Caturra 300gm</h3>
+				<p class="text-sm font-bold text-pearl-lusta-800">Molido - Tueste Especial</p>
+
+				<div class="mt-2 flex items-center justify-between gap-6">
+					<p class="text-lg font-bold text-pearl-lusta-950">C$300</p>
+
+					<a
+						href={linkCoffeCatura}
+						class="grow rounded-br-xl rounded-tl-xl bg-pearl-lusta-700 px-3 py-2 text-center font-semibold text-pearl-lusta-50 transition duration-300 hover:bg-pearl-lusta-600"
+					>
+						Compra
+					</a>
+				</div>
+			</div>
+		</article>
+
+		<article class="w-60 shadow-lg transition duration-700 hover:scale-105 lg:w-56">
+			<picture>
+				<img
+					loading="lazy"
+					src="/images/cafe-arabica.webp"
+					class="aspect-square h-56 w-full rounded-t-xl p-5"
+					alt="Una bolsa de Café Papa Julio, con una etiqueta verde con detalles decorativos en amarillo."
+				/>
+			</picture>
+			<div class="border-pearl-lusta-400 bg-pearl-lusta-100 px-4 py-3">
+				<h3 class="text-lg font-bold">Cafe Árabica 400gm</h3>
+				<p class="text-sm font-bold text-pearl-lusta-800">Grano - Tueste Medio</p>
+
+				<div class="mt-2 flex items-center justify-between gap-6">
+					<p class="text-lg font-bold text-pearl-lusta-950">C$200</p>
+
+					<a
+						href={linkCoffeArabica}
+						class="grow rounded-br-xl rounded-tl-xl bg-pearl-lusta-700 px-3 py-2 text-center font-semibold text-pearl-lusta-50 transition duration-300 hover:bg-pearl-lusta-600"
+					>
+						Compra
+					</a>
+				</div>
+			</div>
+		</article>
+	</div>
+</section>

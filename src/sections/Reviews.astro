@@ -1,0 +1,41 @@
+---
+import Star from '@/assets/icons/Star.astro'
+import reviews from '@/data/reviews.json'
+---
+
+<section id="Reviews" class="space-y-5 px-5 py-10 sm:px-10">
+	<h2 class="text-3xl font-bold text-pearl-lusta-700 sm:text-4xl">Nuestros clientes</h2>
+
+	<div>
+		<div id="embla" class="overflow-hidden">
+			<div class="flex gap-3 last:pl-3">
+				{
+					reviews.map((review) => (
+						<div class="flex flex-[0_0_85%] flex-col items-start gap-2 rounded-xl border border-pearl-lusta-400 bg-pearl-lusta-100 px-4 py-6 sm:flex-[0_0_45%] lg:flex-[0_0_30%]">
+							<div class="flex">
+								{Array.from({ length: review.stars }).map(() => (
+									<Star />
+								))}
+							</div>
+							<p class="line-clamp-3 text-sm font-semibold">{review.comment}</p>
+							<p class="font-bold">{review.username}</p>
+						</div>
+					))
+				}
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	import EmblaCarousel from 'embla-carousel'
+
+	const emblaNode = document.getElementById('embla')
+	const options = { loop: true }
+
+	if (emblaNode instanceof HTMLElement) {
+		EmblaCarousel(emblaNode, options)
+	} else {
+		console.error('El elemento .embla no se encontró en el DOM.')
+	}
+</script>

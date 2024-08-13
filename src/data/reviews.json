@@ -1,0 +1,32 @@
+[
+	{
+		"stars": 5,
+		"comment": "El café es simplemente increíble. La frescura y el aroma son incomparables. ¡Definitivamente volveré a comprar!",
+		"username": "CarlosGonzalez"
+	},
+	{
+		"stars": 5,
+		"comment": "El mejor café que he probado en mucho tiempo. La calidad es excepcional y el sabor es insuperable.",
+		"username": "MariaLopez"
+	},
+	{
+		"stars": 4,
+		"comment": "El café es delicioso y de excelente calidad. Me encanta la variedad que ofrecen.",
+		"username": "JuanPerez"
+	},
+	{
+		"stars": 5,
+		"comment": "Me encanta la variedad que ofrecen, y el servicio al cliente es excepcional. ¡Mi nuevo lugar favorito para comprar café! ",
+		"username": "SofiaMartinez"
+	},
+	{
+		"stars": 4,
+		"comment": "Gran sabor y frescura. Además, el envío fue rápido y sin problemas.",
+		"username": "LuisRodriguez"
+	},
+	{
+		"stars": 5,
+		"comment": "El café llegó en perfectas condiciones y el empaque es muy bonito. El sabor es fenomenal.",
+		"username": "AnaFernandez"
+	}
+]
